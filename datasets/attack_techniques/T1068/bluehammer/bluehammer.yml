@@ -1,0 +1,18 @@
+author: Raven Tait, Splunk
+id: 430623fe-f2ec-42a1-9015-41077aa40f74
+date: '2026-04-27'
+description: Generated datasets for Bluehammer privilege escalation
+    in attack range.
+environment: attack_range
+directory: snapattack
+mitre_technique:
+- T1068
+datasets:
+-   name: windows-security
+    sourcetype: XmlWinEventLog
+    source: XmlWinEventLog:Security
+    path: /datasets/attack_techniques/T1068/bluehammer/windows-security.log
+-   name: windows-sysmon
+    sourcetype: XmlWinEventLog
+    source: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+    path: /datasets/attack_techniques/T1068/bluehammer/windows-sysmon.log
