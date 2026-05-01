@@ -4,7 +4,7 @@ date: '2026-04-27'
 description: Generated datasets for Bluehammer privilege escalation
     in attack range.
 environment: attack_range
-directory: snapattack
+directory: bluehammer
 mitre_technique:
 - T1068
 datasets:
