@@ -1,0 +1,14 @@
+author: Raven Tait, Splunk
+id: eaa5b8b2-ca4e-4a9d-a8fd-5dfe2d91a8c8
+date: '2026-05-01'
+description: Generated datasets for RedSun privilege escalation
+    in attack range.
+environment: attack_range
+directory: redsun
+mitre_technique:
+- T1068
+datasets:
+-   name: windows-sysmon
+    sourcetype: XmlWinEventLog
+    source: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+    path: /datasets/attack_techniques/T1068/redsun/windows-sysmon.log
